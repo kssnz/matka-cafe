@@ -1,0 +1,17 @@
+{
+  "name": "matka-cafe",
+  "version": "1.0.0",
+  "description": "Cafe Booking & Food Ordering System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix Frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "seed": "npm run seed --prefix backend",
+    "seed:menu": "npm run seed:menu --prefix backend"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
